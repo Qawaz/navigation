@@ -109,6 +109,13 @@ afterEvaluate {
                     password = (project.findProperty("repsyToken") ?: System.getenv("repsyToken")) as? String
                 }
             }
+            maven("https://maven.pkg.github.com/Qawaz/navigation") {
+                name = "GithubPackages"
+                credentials {
+                    username = (System.getenv("GPR_USER")).toString()
+                    password = (System.getenv("GPR_API_KEY")).toString()
+                }
+            }
         }
     }
 }

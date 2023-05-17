@@ -4,7 +4,7 @@ package com.chrynan.navigation.buildSrc
 
 object LibraryConstants {
 
-    const val group = "com.chrynan.navigation"
+    const val group = "com.qawaz.navigation"
     const val owner = "chrynan"
     const val repoName = "navigation"
     const val versionName = "0.7.1"
